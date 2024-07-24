@@ -100,7 +100,7 @@ async function getChatCompletion( userMessage) {
         }
       }
       console.log('------------functionName',functionName);
-      console.log('------------functionResponse',functionResponse);
+      // console.log('------------functionResponse',functionResponse);
       if (functionName === 'aadharVerification') {
         let completionsInput02 = [{ 
           role: "system", 
