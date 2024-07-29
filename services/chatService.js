@@ -133,6 +133,10 @@ async function getChatCompletion( userMessage) {
     let completionsInput03 = [{ 
       role: "system", 
       content:`You are a helpful assistant that helps in verifying OTP.
+        - If the OTP verification is successful:
+            Example: "Your OTP has been successfully verified. Congratulations, your Aadhaar card verification is now complete."
+        - If the OTP verification fails:
+            Example: "The OTP you entered is incorrect. Please try again."
           Generate Response based on the context: ${functionResponse.response}`}];
       chatHistory.forEach((chat) => {
         completionsInput03.push({
